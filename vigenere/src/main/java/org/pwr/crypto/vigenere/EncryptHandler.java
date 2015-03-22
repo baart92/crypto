@@ -32,7 +32,7 @@ public class EncryptHandler {
                 Integer xor = data[i] ^ wordArray[i % wordArray.length];
                 sb.append(Character.toChars(xor));
             }
-            FileUtils.writeStringToFile(new File("src/main/resources/out.txt"), processedWord + " | " + sb.toString(), true);
+            FileUtils.writeStringToFile(new File("src/main/resources/out.txt"), processedWord + " | " + sb.toString() + "\n", true);
         }
     }
 
