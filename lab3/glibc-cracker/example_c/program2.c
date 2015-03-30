@@ -13,7 +13,6 @@ main() {
     if (r[i] < 0) {
       r[i] += 2147483647;
     }
-    printf("%d\t%d\n", i, ((unsigned int)r[i]) >> 1);
   }
   for (i=31; i<34; i++) {
     r[i] = r[i-31];
@@ -23,6 +22,6 @@ main() {
   }
   for (i=344; i<MAX; i++) {
     r[i] = r[i-31] + r[i-3];
-    //printf("%d\n", ((unsigned int)r[i]) >> 1);
+    printf("%d\n", ((unsigned int)r[i]) >> 1);
   }
 }
